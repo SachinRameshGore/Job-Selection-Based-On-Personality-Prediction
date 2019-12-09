@@ -1,0 +1,71 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMaster.master.cs" Inherits="Admin_AdminMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="adminStyles/admin.css" rel="stylesheet" />
+     <script type="text/javascript" src="adminStyles/menu.js"></script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+        
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+         <div class="content">
+                  <h1> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Job Selection Based On Personality Prediction</h1>
+         </div>
+     
+        <div id="sidebar">
+            <div class="toggle-btn" onclick="toggleSidebar()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+           <div class="sachin">
+               <div class="menu">
+            <ul>
+                <li><a href="Homepage.aspx">Home</a></li>
+               
+                <li><a href="AddJob.aspx">AddJob Details</a></li>
+               
+                <li><a href="addVideo.aspx">Add Video</a></li>
+
+           
+                <li><a href="#" > Add Questions</a>
+                                <ul>
+                        <li><a href="AddProgrammingQuestions.aspx">Add Programming Questions</a></li>
+                        <li><a href="AddMathsQuestion.aspx">Add Aptitude Questions</a></li>
+                        <li><a href="AddPersonalityQuestions.aspx">Add Personality Questions</a></li>
+                    </ul>
+                    </li>
+                <li><a href="AddEmployee.aspx">Add Employee</a></li>
+                <li> <a href="ShortlistCandidate.aspx">Shortlist Candidate</a></li>
+                  <li><a href="#">View Details</a>
+                    <ul>
+                        <li><a href="ViewProgrammingQuestions.aspx">Programming Questions</a></li>
+                        <li><a href="ViewMathsQuestions.aspx">Aptitude Questions</a></li>
+                        <li><a href="ViewPersonalityQuestions.aspx">Personality Questions</a></li>
+                         <li><a href="DisplayEmployee.aspx">Employee Details</a></li>
+                          <li><a href="ViewJob.aspx">Job Details</a></li>
+                        
+                    </ul></li>
+                <li><a href="AdminLogin.aspx">LOGOUT</a></li><br />
+             </ul></div>
+                    </div>
+         </div>
+         <div class="clear"></div>
+
+    
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+         <div class="clear"></div>
+       <%-- <div class="footer">
+                <h2>CopyRight@Sachingore.com</h2>
+            </div>
+    --%>
+    </form>
+</body>
+</html>

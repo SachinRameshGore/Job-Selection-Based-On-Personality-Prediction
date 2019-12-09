@@ -1,0 +1,25 @@
+﻿.searchbox {
+    position: relative;
+	left: -5px;
+	border-radius: 0 25px 25px 0;
+	width:150px;
+	height: 50px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	background: #ffc107;
+	color: #fff;
+	
+
+}
+.searchbtn {
+   
+	background: #fff;
+	width: 340px;
+	height: 50px;
+	border: none;
+	outline: none;
+	padding: 0 25px;
+	border-radius: 25px 0 0 25px;
+
+}

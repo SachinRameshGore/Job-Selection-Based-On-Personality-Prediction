@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterUser.master.cs" Inherits="user_MasterUser" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+     <link href="Styles/user.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+   
+     <style type="text/css">
+         .auto-style1 {
+             text-align: center;
+         }
+     </style>
+   
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div class="content">
+                  <h1 class="auto-style1">Job Selection Based On Personality Prediction</h1>
+            
+                 
+       
+            </div>
+
+           <div class="clear"></div>
+  <%--  <div class="contentbody"> --%>
+        <asp:ContentPlaceHolder id="Contentbody" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    <%--</div>--%>
+         <div class="clear"></div>
+        <div class="footer">
+                <h2>CopyRigh@2019</h2>
+            </div>
+    </form>
+</body>
+</html>
